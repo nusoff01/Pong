@@ -1,0 +1,17 @@
+.header {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+  
+.headerText {
+  font-size: 32px;
+  flex-grow: 1;
+}
+
+.homePageLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}

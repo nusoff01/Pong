@@ -1,33 +1,60 @@
-.App {
-  text-align: center;
+
+* {
+  font-family: 'Hepta Slab', serif;
+  box-sizing: border-box;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+button {
+  height: 32px;
+  background-color: rgba(0,0,0,.08);
+  outline: none;
+  border: none;
+  font-family: 'Hepta Slab', serif;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: rgba(0,0,0,.2);
+}
+
+/* end of app.js, rest needs to find a home */
+
+.content {
+  display: block;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  min-height: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+.contentMainPanel {
+  flex-grow: 1;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightPanel {
+  width: 400px;
+  height: 100%;
+  padding: 8px;
+}
+
+.rightPanelHeader {
+  font-size: 20px;
+  margin-top: 8px;
+  border-bottom: 4px solid rgba(0,0,0,.9);
+}
+
+
+.navLinks {
+  display: inline-flex;
+  margin-top: 8px;
+}
+
+.navLink {
+  margin-left: 4px;
+  margin-right: 12px;
 }

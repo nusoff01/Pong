@@ -1,0 +1,12 @@
+.header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    height: 60px;
+  }
+  
+  .headerText {
+    font-size: 32px;
+    flex-grow: 1;
+  }

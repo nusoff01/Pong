@@ -1,0 +1,39 @@
+.homeContent {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.greetingText {
+  border-bottom: 1px solid grey;
+  margin-bottom: 32px;
+  width: fit-content;
+}
+
+.contentBox {
+  max-width: 780px;
+  width: 100%;
+}
+
+.contentHeader {
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 6px solid black;
+  padding-left: 8px;
+  margin-bottom: 12px;
+}
+
+.contentMain {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.contentPhotoContainer {
+  display: flex;
+  background: rgba(0,0,0,.06);
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-height: 500px;
+}
