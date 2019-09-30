@@ -1,11 +1,37 @@
 
 * {
-  font-family: 'Hepta Slab', serif;
+  font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-body {
-  padding-left: 20px;
-  padding-right: 20px;
+/* html, body {
+  padding: 0px;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+} */
+
+table th, table td{
+  text-align: left;
+  padding: 8px;
+}
+
+table th {
+  background-color: rgba(0,0,0,.12);
+  border-bottom: 1px solid black;
+}
+table td {
+  background-color: rgba(0,0,0,.06);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  border-bottom: 1px solid black;
+  padding: 4px;
 }
 
 button {
@@ -13,7 +39,6 @@ button {
   background-color: rgba(0,0,0,.08);
   outline: none;
   border: none;
-  font-family: 'Hepta Slab', serif;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -57,4 +82,10 @@ button:hover {
 .navLink {
   margin-left: 4px;
   margin-right: 12px;
+}
+
+@media all and (max-width:600px) {
+  button {
+    height: 24px;
+  }
 }

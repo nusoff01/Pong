@@ -17,7 +17,8 @@ class HomeContent extends React.Component {
                     August 23rd 2019 marked the first TSI tournament. Strong showings by Sai and Matt were stifled by an absolutely dominant performance from Ben, who claimed victory with relative ease.
                 </div>
                 <div className="contentPhotoContainer">
-                    <img src='/images/Tournament1Outcome.JPG'></img>
+                
+                    <img src={process.env.PUBLIC_URL + '/images/Tournament1Outcome.JPG'}></img>
                 </div>
             </div>  
         </div>);

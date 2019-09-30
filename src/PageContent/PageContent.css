@@ -2,16 +2,20 @@
   display: inline-flex;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid grey;
+  background-color: #225f78;
+  color: white;
+
 }
   
 .headerText {
   font-size: 32px;
   flex-grow: 1;
+  padding: 0px 20px;
 }
 
 .homePageLayout {
-  width: 100%;
+  width: calc(100% - 32px);
   display: flex;
   flex-direction: row;
+  margin: 0px 16px;
 }

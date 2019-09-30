@@ -29,11 +29,23 @@ export function createPlayers (playerNames, matches) {
         }
     }
 
+    let transFormMatchForPlater = (match, playerName) => {
+        return {
+            date: match.Date,
+            won: match.Winner === playerName,
+            location: match.Location,
+            opponent: match.Winner === playerName ? match.Loser : match.Winner
+        }
+    }
+
     if (matches) {
         matches.forEach((match) => {
             if (match.Winner in playerDict && match.Loser in playerDict) {
                 playerDict[match.Winner].wins += 1;
+                playerDict[match.Winner].matches.push(transFormMatchForPlater(match, match.Winner));
                 playerDict[match.Loser].losses += 1;
+                playerDict[match.Loser].matches.push(transFormMatchForPlater(match, match.Loser));
+
 
                 let adjustedELOS = ELOCalc(playerDict[match.Winner].ELO, playerDict[match.Loser].ELO, true, KFACTOR);
                 playerDict[match.Winner].ELO = adjustedELOS.aELO;
@@ -53,6 +65,6 @@ export function createPlayers (playerNames, matches) {
             return -1;
         }
         return 0;
-    })
+    });
 }
 

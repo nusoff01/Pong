@@ -1,33 +1,56 @@
 
 .leaderLadder {
-  min-width: 400px;
   padding-top: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.ladder {
+  width: 400px;
 }
 
 .leaderLadderHeader {
   font-size: 28px;
-  border-bottom: 4px solid rgba(0,0,0,.9);
+  border-bottom: 1px solid black;
+  height: 40px;
 }
 
-.leaderLadder table{
+.leaderLadder .leadersTable{
   border-collapse: collapse;
   width: 100%;
   border-bottom: 1px solid grey;
-  background-color: rgba(0,0,0,.06);
 
 }
 
-.leaderLadder th, .leaderLadder td{
-  text-align: left;
-  padding: 8px;
+.selectedPlayer {
+  background-color: rgba(0,0,255, .3);
 }
 
-.leaderLadder td {
+.leadersTable td {
   border-left: 1px solid rgba(0,0,0,.2);
   border-right: 1px solid rgba(0,0,0,.2);
   padding: 4px 8px;
 }
 
-.leaderLadder .headerRow {
+.leadersTable .headerRow {
   border-bottom: 1px solid grey;
 }
+
+.leadersTable tr:hover:not(.headerRow) {
+  background-color: rgba(0,0,255, .15);
+  cursor: pointer;
+}
+
+@media all and (max-width:880px) {
+	.leaderLadder {
+    flex-direction: column-reverse !important;
+  }
+  .ladder {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 24px;
+  }
+}
+
+
