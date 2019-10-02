@@ -29,6 +29,9 @@ class PlayerProfile extends React.Component {
             case 'Nick' : 
                 name = 'Nick';
                 break;
+            case 'Matt' : 
+                name = 'Matt';
+                break;
             default:
                 break;
         }
