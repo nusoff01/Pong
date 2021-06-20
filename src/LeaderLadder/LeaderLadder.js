@@ -4,13 +4,11 @@ import { createPlayers } from '../Utils';
 import * as d3 from 'd3';
 import PlayerProfile from '../PlayerProfile/PlayerProfile';
 
-const matchesLink = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSBuLnOBXaX9mXTc08tcMnH5eLxt8VuLGf4a0SGouikhwKnfUxp6Kjo0hYa3QONBjfSS-oAEiL3TXX9/pub?gid=0&single=true&output=csv'
+const matchesLink = 'https://docs.google.com/spreadsheets/d/1sF6K5eoTMGjo07zJKPZMnWw_B3yIk6WU5F6Ud56PVTs/edit?usp=sharing'
 
 class LeaderLadder extends React.Component {
     constructor () {
         super();
-
-
         this.state = {
             selectedPlayer: null,
             players: []

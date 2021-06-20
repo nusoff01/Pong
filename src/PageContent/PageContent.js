@@ -13,7 +13,7 @@ class PageContent extends React.Component {
         super();
         this.state = {
             matches: [],
-            players: ['Irem', 'Nick', 'Matt', 'Karthik', 'Sandip', 'Sai', 'Ellick', 'Abinav']
+            players: ['Irem', 'Nick', 'Cory'] //hardcoded for now
         }
     }
 

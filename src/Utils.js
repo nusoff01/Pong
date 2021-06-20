@@ -1,7 +1,6 @@
 const KFACTOR = 50;
 
 export function createPlayers (playerNames, matches) {
-
     let playerDict = {};
     playerNames.forEach((playerName) => {
         playerDict[playerName] = {
